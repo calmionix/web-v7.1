@@ -16,6 +16,43 @@
   
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* ── Live TikTok: 2-column layout ── */
+    .live-tiktok-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl, 1.5rem);
+      align-items: stretch;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* Kotak ketentuan tampil seperti price-card */
+    .live-ketentuan-box {
+      background: var(--bg-card, rgba(255,255,255,0.04));
+      border: 1px solid var(--border-color, rgba(255,255,255,0.08));
+      border-radius: var(--radius-lg, 16px);
+      padding: var(--space-xl, 1.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .live-ketentuan-box .live-addon-info {
+      border-left: none !important;
+      background: transparent !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100%;
+    }
+
+    /* Mobile: tumpuk vertikal */
+    @media (max-width: 640px) {
+      .live-tiktok-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo.png">
@@ -131,7 +168,8 @@
         <i class="fas fa-broadcast-tower" style="color: var(--danger);"></i>
         Live TikTok
       </h3>
-      <div class="grid grid-3">
+      <div class="live-tiktok-layout">
+        <!-- Card Booking -->
         <div class="price-card reveal stagger-1" data-category="live">
           <div class="platform">Live TikTok</div>
           <div class="price">Rp 40.000 <span style="font-size: var(--text-sm);">/ jam</span></div>
@@ -151,9 +189,11 @@
           <button class="btn btn-primary" style="width: 100%;" onclick="Calmionix.bookLiveTikTok()">
             <i class="fab fa-whatsapp"></i> Booking Live
           </button>
-          
-          <!-- Addon Info Box -->
-          <div class="live-addon-info is-visible">
+        </div>
+
+        <!-- Kotak Ketentuan (pindah ke kanan) -->
+        <div class="live-ketentuan-box reveal stagger-2" data-category="live">
+          <div class="live-addon-info is-visible" style="margin:0;">
             <span class="info-icon"><i class="fas fa-info-circle"></i></span>
             <strong>Ketentuan TikTok Live:</strong>
             <ul>
@@ -164,7 +204,8 @@
             </ul>
           </div>
         </div>
-     </div>
+      </div>
+    </div>
   </section>
 
   <!-- YouTube Section -->
