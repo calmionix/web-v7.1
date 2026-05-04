@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cara Endorse - Calmionix</title>
+  <meta name="description" content="Panduan lengkap cara endorse server Minecraft di Calmionix. Ikuti langkah-langkah mudah ini.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <style>
+    .steps-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: var(--space-xl);
+      margin-bottom: var(--space-lg);
+      transition: all var(--transition-base);
+    }
+    
+    .step-card:hover {
+      transform: translateX(8px);
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-md);
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-gradient);
+      border-radius: var(--radius-full);
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: var(--font-bold);
+      color: var(--text-inverse);
+    }
+    
+    .step-title {
+      font-size: var(--text-lg);
+      font-weight: var(--font-semibold);
+      margin: 0;
+    }
+    
+    .step-content {
+      padding-left: calc(50px + var(--space-lg));
+    }
+    
+    .step-content p {
+      margin-bottom: var(--space-md);
+      color: var(--text-secondary);
+    }
+    
+    .step-content ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .step-content li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      padding: var(--space-xs) 0;
+      color: var(--text-secondary);
+      font-size: var(--text-sm);
+    }
+    
+    .step-content li i {
+      color: var(--accent-primary);
+      margin-top: 3px;
+    }
+    
+    .step-actions {
+      display: flex;
+      gap: var(--space-md);
+      margin-top: var(--space-md);
+      flex-wrap: wrap;
+    }
+    
+    .info-box {
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      margin-top: var(--space-md);
+    }
+    
+    .info-box i {
+      color: var(--accent-primary);
+      margin-right: var(--space-sm);
+    }
+    
+    .info-box p {
+      margin: 0;
+      font-size: var(--text-sm);
+    }
+    
+    @media (max-width: 768px) {
+      .step-content {
+        padding-left: 0;
+      }
+      
+      .step-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.png" alt="Calmionix Logo">
+        <span>Calmionix</span>
+      </a>
+      
+      <ul class="navbar-nav">
+        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="price.html" class="nav-link"><i class="fas fa-tag"></i> Price List</a></li>
+        <li><a href="schedule.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Jadwal</a></li>
+        <li><a href="cara-endorse.html" class="nav-link active"><i class="fas fa-book"></i> Cara Endorse</a></li>
+        <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        <li><a href="social.html" class="nav-link"><i class="fas fa-share-alt"></i> Social</a></li>
+        <li><a href="https://discord.gg/qfdBAW29sT" class="nav-link" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section class="section" style="padding-top: calc(var(--navbar-height) + var(--space-3xl));">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Cara Endorse</h2>
+        <p>Ikuti langkah-langkah mudah berikut untuk mempromosikan server Minecraft Anda</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps Section -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="steps-container">
+        <!-- Step 1 -->
+        <div class="step-card reveal stagger-1">
+          <div class="step-header">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Pilih Paket</h3>
+          </div>
+          <div class="step-content">
+            <p>Pilih paket endorse yang sesuai dengan kebutuhan dan budget Anda. Kami menyediakan berbagai pilihan:</p>
+            <ul>
+              <li><i class="fas fa-check"></i> TikTok - Untuk konten short video viral</li>
+              <li><i class="fas fa-check"></i> YouTube - Untuk review detail server</li>
+              <li><i class="fas fa-check"></i> WhatsApp Channel - Untuk komunitas</li>
+              <li><i class="fas fa-check"></i> Bundling - Hemat dengan paket kombinasi</li>
+            </ul>
+            <div class="step-actions">
+              <a href="price.html" class="btn btn-primary">
+                <i class="fas fa-tag"></i> Lihat Price List
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card reveal stagger-2">
+          <div class="step-header">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Lihat Jadwal</h3>
+          </div>
+          <div class="step-content">
+            <p>Cek ketersediaan jadwal upload di halaman jadwal kami. Pilih tanggal yang masih tersedia (Available).</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Jadwal ditampilkan 20 hari ke depan</li>
+              <li><i class="fas fa-check"></i> Jam upload default: 19:00 WIB</li>
+              <li><i class="fas fa-check"></i> Slot terbatas, cepat habis!</li>
+            </ul>
+            <div class="step-actions">
+              <a href="schedule.html" class="btn btn-primary">
+                <i class="fas fa-calendar-alt"></i> Cek Jadwal
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card reveal stagger-3">
+          <div class="step-header">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Ambil Slot</h3>
+          </div>
+          <div class="step-content">
+            <p>Klik tombol "Ambil Slot" pada tanggal yang Anda inginkan. Anda akan diarahkan ke WhatsApp dengan pesan otomatis.</p>
+            <div class="info-box">
+              <i class="fas fa-lightbulb"></i>
+              <p><strong>Tips:</strong> Segera konfirmasi setelah mengirim pesan untuk mengamankan slot Anda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card reveal stagger-4">
+          <div class="step-header">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Hubungi via WhatsApp</h3>
+          </div>
+          <div class="step-content">
+            <p>Setelah diarahkan ke WhatsApp, tim kami akan membalas dan memandu Anda melalui proses selanjutnya.</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Konfirmasi ketersediaan slot</li>
+              <li><i class="fas fa-check"></i> Diskusi brief konten</li>
+              <li><i class="fas fa-check"></i> Penjelasan detail paket</li>
+            </ul>
+            <div class="step-actions">
+              <a href="https://wa.me/6282130570915" class="btn btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-card reveal stagger-5">
+          <div class="step-header">
+            <div class="step-number">5</div>
+            <h3 class="step-title">Isi Data Server</h3>
+          </div>
+          <div class="step-content">
+            <p>Siapkan informasi lengkap tentang server Minecraft Anda untuk kami review:</p>
+            <ul>
+              <li><i class="fas fa-check"></i> <strong>Nama Server</strong> - Nama unik server Anda</li>
+              <li><i class="fas fa-check"></i> <strong>IP / Link</strong> - IP server atau link invite</li>
+              <li><i class="fas fa-check"></i> <strong>Deskripsi</strong> - Fitur unik dan selling point</li>
+              <li><i class="fas fa-check"></i> <strong>Versi Minecraft</strong> - 1.8, 1.16, 1.20, dll</li>
+              <li><i class="fas fa-check"></i> <strong>Gambar/Logo</strong> - (opsional) untuk WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step-card reveal stagger-6">
+          <div class="step-header">
+            <div class="step-number">6</div>
+            <h3 class="step-title">Pembayaran</h3>
+          </div>
+          <div class="step-content">
+            <p>Lakukan pembayaran di awal untuk mengamankan slot Anda. Kami menerima berbagai metode pembayaran:</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Transfer Bank (BCA, Mandiri, BNI)</li>
+              <li><i class="fas fa-check"></i> E-Wallet (DANA, OVO, GoPay, ShopeePay)</li>
+              <li><i class="fas fa-check"></i> QRIS</li>
+            </ul>
+            <div class="info-box">
+              <i class="fas fa-shield-alt"></i>
+              <p><strong>Catatan:</strong> Pembayaran 100% di awal. Refund hanya jika kesalahan dari pihak kami.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step-card reveal stagger-1">
+          <div class="step-header">
+            <div class="step-number">7</div>
+            <h3 class="step-title">Recording H-1</h3>
+          </div>
+          <div class="step-content">
+            <p>Recording gameplay akan dilakukan H-1 (satu hari sebelum jadwal upload). Pastikan server Anda dalam kondisi optimal.</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Server online dan stabil</li>
+              <li><i class="fas fa-check"></i> Fitur yang dijanjikan berfungsi</li>
+              <li><i class="fas fa-check"></i> Staff siap membantu jika diperlukan</li>
+            </ul>
+            <div class="info-box">
+              <i class="fas fa-clock"></i>
+              <p><strong>Info:</strong> Waktu recording fleksibel, akan dikonfirmasi sebelumnya.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step-card reveal stagger-2">
+          <div class="step-header">
+            <div class="step-number">8</div>
+            <h3 class="step-title">Upload Sesuai Jadwal</h3>
+          </div>
+          <div class="step-content">
+            <p>Video akan diupload sesuai jadwal yang telah ditentukan. Anda akan menerima notifikasi saat konten sudah live.</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Notifikasi saat video upload</li>
+              <li><i class="fas fa-check"></i> Link konten akan dikirim</li>
+              <li><i class="fas fa-check"></i> Monitor engagement dan feedback</li>
+            </ul>
+            <div class="info-box">
+              <i class="fas fa-star"></i>
+              <p><strong>Selamat!</strong> Server Anda sekarang mendapatkan exposure lebih banyak!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-gradient">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-lg);">
+          Siap Memulai?
+        </h2>
+        <p style="font-size: var(--text-lg); max-width: 500px; margin: 0 auto var(--space-2xl);">
+          Langsung cek jadwal dan amankan slot untuk server Anda sekarang juga!
+        </p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="schedule.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-rocket"></i>
+            Ambil Slot
+          </a>
+          <a href="faq.html" class="btn btn-secondary btn-lg">
+            <i class="fas fa-question-circle"></i>
+            Baca FAQ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-brand">
+          <img src="assets/images/logo.png" alt="Calmionix Logo" style="width: 32px; height: 32px;">
+          <span>Calmionix</span>
+        </a>
+        
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="price.html">Price List</a></li>
+          <li><a href="schedule.html">Jadwal</a></li>
+          <li><a href="cara-endorse.html">Cara Endorse</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="social.html">Social</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Calmionix. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

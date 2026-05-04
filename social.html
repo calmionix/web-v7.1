@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media - Calmionix</title>
+  <meta name="description" content="Ikuti Calmionix di berbagai platform social media. Discord, WhatsApp Channel, TikTok, dan YouTube.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <style>
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-xl);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .social-card-large {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-2xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    
+    .social-card-large:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .social-card-large.discord:hover {
+      border-color: #5865f2;
+      box-shadow: 0 20px 40px -10px rgba(88, 101, 242, 0.3);
+    }
+    
+    .social-card-large.whatsapp:hover {
+      border-color: #25d366;
+      box-shadow: 0 20px 40px -10px rgba(37, 211, 102, 0.3);
+    }
+    
+    .social-card-large.tiktok:hover {
+      border-color: var(--text-primary);
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .social-card-large.youtube:hover {
+      border-color: #ff0000;
+      box-shadow: 0 20px 40px -10px rgba(255, 0, 0, 0.2);
+    }
+    
+    .social-icon-large {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--space-lg);
+      border-radius: var(--radius-xl);
+      font-size: var(--text-4xl);
+    }
+    
+    .social-card-large.discord .social-icon-large {
+      background: rgba(88, 101, 242, 0.1);
+      color: #5865f2;
+    }
+    
+    .social-card-large.whatsapp .social-icon-large {
+      background: rgba(37, 211, 102, 0.1);
+      color: #25d366;
+    }
+    
+    .social-card-large.tiktok .social-icon-large {
+      background: rgba(0, 0, 0, 0.05);
+      color: var(--text-primary);
+    }
+    
+    [data-theme="dark"] .social-card-large.tiktok .social-icon-large {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+    }
+    
+    .social-card-large.youtube .social-icon-large {
+      background: rgba(255, 0, 0, 0.1);
+      color: #ff0000;
+    }
+    
+    .social-card-large h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .social-card-large p {
+      color: var(--text-secondary);
+      font-size: var(--text-sm);
+      margin-bottom: var(--space-xl);
+      min-height: 40px;
+    }
+    
+    .social-card-large .btn {
+      width: 100%;
+    }
+    
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-xl);
+      margin: var(--space-xl) 0;
+      flex-wrap: wrap;
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-bold);
+      color: var(--text-primary);
+    }
+    
+    .stat-label {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    @media (max-width: 768px) {
+      .social-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.png" alt="Calmionix Logo">
+        <span>Calmionix</span>
+      </a>
+      
+      <ul class="navbar-nav">
+        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="price.html" class="nav-link"><i class="fas fa-tag"></i> Price List</a></li>
+        <li><a href="schedule.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Jadwal</a></li>
+        <li><a href="cara-endorse.html" class="nav-link"><i class="fas fa-book"></i> Cara Endorse</a></li>
+        <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        <li><a href="social.html" class="nav-link active"><i class="fas fa-share-alt"></i> Social</a></li>
+        <li><a href="https://discord.gg/qfdBAW29sT" class="nav-link" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section class="section" style="padding-top: calc(var(--navbar-height) + var(--space-3xl));">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Ikuti Kami</h2>
+        <p>Terhubung dengan Calmionix di berbagai platform social media</p>
+      </div>
+      
+      <!-- Stats -->
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <div class="stat-value">50K+</div>
+          <div class="stat-label">Followers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">500+</div>
+          <div class="stat-label">Videos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">10M+</div>
+          <div class="stat-label">Views</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">300+</div>
+          <div class="stat-label">Servers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Links Section -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="social-grid">
+        <!-- Discord -->
+        <div class="social-card-large discord reveal stagger-1">
+          <div class="social-icon-large">
+            <i class="fab fa-discord"></i>
+          </div>
+          <h3>Discord Server</h3>
+          <p>Bergabung dengan komunitas Minecraft terbesar. Dapatkan update terbaru dan diskusi dengan member lain.</p>
+          <a href="https://discord.gg/qfdBAW29sT" class="btn btn-primary" target="_blank">
+            <i class="fab fa-discord"></i>
+            Join Discord
+          </a>
+        </div>
+
+        <!-- WhatsApp Channel -->
+        <div class="social-card-large whatsapp reveal stagger-2">
+          <div class="social-icon-large">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3>WhatsApp Channel</h3>
+          <p>Ikuti channel WhatsApp kami untuk mendapatkan notifikasi video terbaru dan info penting lainnya.</p>
+          <a href="https://whatsapp.com/channel/0029VbBX3oH4SpkL6bGQa404" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Follow Channel
+          </a>
+        </div>
+
+        <!-- TikTok -->
+        <div class="social-card-large tiktok reveal stagger-3">
+          <div class="social-icon-large">
+            <i class="fab fa-tiktok"></i>
+          </div>
+          <h3>TikTok</h3>
+          <p>Tonton konten short video Minecraft terbaik. Follow untuk tidak ketinggalan video-video viral!</p>
+          <a href="https://www.tiktok.com/@calmionix.id" class="btn btn-primary" target="_blank">
+            <i class="fab fa-tiktok"></i>
+            Follow TikTok
+          </a>
+        </div>
+
+        <!-- YouTube -->
+        <div class="social-card-large youtube reveal stagger-4">
+          <div class="social-icon-large">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <h3>YouTube</h3>
+          <p>Subscribe channel YouTube kami untuk review lengkap server Minecraft dan konten menarik lainnya.</p>
+          <a href="https://www.youtube.com/@calmionix" class="btn btn-primary" target="_blank">
+            <i class="fab fa-youtube"></i>
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section bg-gradient">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-lg);">
+          Hubungi Kami Langsung
+        </h2>
+        <p style="font-size: var(--text-lg); max-width: 500px; margin: 0 auto var(--space-2xl);">
+          Untuk order dan pertanyaan bisnis, silakan hubungi kami melalui WhatsApp.
+        </p>
+        <a href="https://wa.me/6282130570915" class="btn btn-primary btn-lg" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+          Chat WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-brand">
+          <img src="assets/images/logo.png" alt="Calmionix Logo" style="width: 32px; height: 32px;">
+          <span>Calmionix</span>
+        </a>
+        
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="price.html">Price List</a></li>
+          <li><a href="schedule.html">Jadwal</a></li>
+          <li><a href="cara-endorse.html">Cara Endorse</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="social.html">Social</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Calmionix. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

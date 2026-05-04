@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Upload - Calmionix</title>
+  <meta name="description" content="Jadwal upload konten endorse server Minecraft. Pilih slot yang tersedia dan amankan jadwal Anda.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <style>
+    .schedule-item .server-name {
+      font-size: var(--text-sm);
+      font-weight: var(--font-semibold);
+      color: var(--text-primary);
+      margin-top: var(--space-xs);
+      text-align: center;
+      word-break: break-word;
+    }
+
+    .schedule-item .platform-name {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .schedule-item.booked .server-name {
+      color: var(--text-primary);
+    }
+
+    .schedule-item.available .server-name {
+      color: var(--success);
+    }
+    
+    .schedule-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: var(--space-2xl);
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.png" alt="Calmionix Logo">
+        <span>Calmionix</span>
+      </a>
+      
+      <ul class="navbar-nav">
+        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="price.html" class="nav-link"><i class="fas fa-tag"></i> Price List</a></li>
+        <li><a href="schedule.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Jadwal</a></li>
+        <li><a href="cara-endorse.html" class="nav-link"><i class="fas fa-book"></i> Cara Endorse</a></li>
+        <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        <li><a href="social.html" class="nav-link"><i class="fas fa-share-alt"></i> Social</a></li>
+        <li><a href="https://discord.gg/qfdBAW29sT" class="nav-link" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Schedule Section -->
+  <section class="section" style="padding-top: calc(var(--navbar-height) + var(--space-3xl));">
+    <div class="container">
+      <div class="schedule-header reveal">
+        <h2>Jadwal Upload</h2>
+        <p>Pilih tanggal yang tersedia untuk mengamankan slot upload Anda</p>
+      </div>
+      
+      <!-- Schedule Type Toggle -->
+      <div class="schedule-type-toggle reveal">
+        <button type="button" class="active" data-type="konten" onclick="Calmionix.toggleScheduleType('konten')">
+          <i class="fas fa-video"></i> Konten
+        </button>
+        <button type="button" data-type="live" onclick="Calmionix.toggleScheduleType('live')">
+          <i class="fas fa-broadcast-tower"></i> Live TikTok
+        </button>
+      </div>
+      
+      <!-- Legend -->
+      <div class="schedule-legend reveal">
+        <div class="legend-item">
+          <div class="legend-dot available"></div>
+          <span>Tersedia</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot booked"></div>
+          <span>Booked</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot today"></div>
+          <span>Hari Ini</span>
+        </div>
+      </div>
+      
+      <!-- Schedule Grid -->
+      <div class="schedule-grid" id="scheduleGrid">
+        <!-- Schedule items will be loaded by JavaScript -->
+      </div>
+      
+      <!-- Note -->
+      <div class="schedule-note reveal">
+        <i class="fas fa-info-circle"></i>
+        <p>Jam upload bervariasi sesuai jadwal. Hubungi kami jika membutuhkan jam upload yang berbeda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-gradient">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-lg);">
+          Butuh Bantuan?
+        </h2>
+        <p style="font-size: var(--text-lg); max-width: 500px; margin: 0 auto var(--space-2xl);">
+          Jika Anda memiliki pertanyaan tentang jadwal atau ingin request slot khusus, 
+          silakan hubungi kami melalui WhatsApp.
+        </p>
+        <a href="https://wa.me/6282130570915" class="btn btn-primary btn-lg" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+          Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-brand">
+          <img src="assets/images/logo.png" alt="Calmionix Logo" style="width: 32px; height: 32px;">
+          <span>Calmionix</span>
+        </a>
+        
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="price.html">Price List</a></li>
+          <li><a href="schedule.html">Jadwal</a></li>
+          <li><a href="cara-endorse.html">Cara Endorse</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="social.html">Social</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Calmionix. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Calmionix.renderSchedule();
+    });
+  </script>
+</body>
+</html>
