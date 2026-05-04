@@ -44,14 +44,14 @@
   {
     "date": "2026-05-04",
     "day": "Senin",
-    "server": "Terangin SMP",
+    "server": "Calmionix SMP",
     "platform": "TikTok",
     "time": "15:00"
   },
   {
     "date": "2026-05-05",
     "day": "Selasa",
-    "server": "Calmionix",
+    "server": "Kingdom SMP",
     "platform": "TikTok",
     "time": "15:00"
   },
@@ -61,5 +61,27 @@
     "server": "Kewer SMP",
     "platform": "TikTok",
     "time": "15:00"
+  },
+  {
+    "date": "2026-05-07",
+    "day": "Kamis",
+    "server": "Potato SMP",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-05-08",
+    "day": "Jumat",
+    "server": "Terangin SMP",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-05-09",
+    "day": "Sabtu",
+    "server": "PVP Legend",
+    "platform": "TikTok",
+    "time": "15:00"
   }
 ]
+
