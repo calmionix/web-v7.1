@@ -14,7 +14,7 @@
   {
     "date": "2026-05-08",
     "time": "17:00",
-    "duration": 2,
+    "duration": 1,
     "server": "Basmi Anarki"
   },
   {
@@ -22,5 +22,11 @@
     "time": "18:00",
     "duration": 2,
     "server": "Voxen SMP"
+  },
+  {
+    "date": "2026-05-10",
+    "time": "14:00",
+    "duration": 2,
+    "server": "Basmi Anarki"
   }
 ]
