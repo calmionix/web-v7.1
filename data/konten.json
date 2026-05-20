@@ -1,152 +1,5 @@
 [
   {
-    "date": "2026-04-28",
-    "day": "Selasa",
-    "server": "Heaven RPG",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-04-29",
-    "day": "Rabu",
-    "server": "Adalah Pokoknya",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-04-30",
-    "day": "Kamis",
-    "server": "Netherking",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-01",
-    "day": "Jumat",
-    "server": "Potato SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-02",
-    "day": "Sabtu",
-    "server": "Calmionix SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-03",
-    "day": "Minggu",
-    "server": "Cookie SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-04",
-    "day": "Senin",
-    "server": "Calmionix SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-05",
-    "day": "Selasa",
-    "server": "Kingdom SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-06",
-    "day": "Rabu",
-    "server": "Kewer SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-07",
-    "day": "Kamis",
-    "server": "Potato SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-08",
-    "day": "Jumat",
-    "server": "Terangin SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-09",
-    "day": "Sabtu",
-    "server": "PVP Legend",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-10",
-    "day": "Minggu",
-    "server": "Farid SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-11",
-    "day": "Senin",
-    "server": "Razor SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-12",
-    "day": "Selasa",
-    "server": "Voxen SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-13",
-    "day": "Rabu",
-    "server": "Zeny Land",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-14",
-    "day": "Selasa",
-    "server": "Vanasaga ID",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-15",
-    "day": "Jumat",
-    "server": "Desa Petualang",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-16",
-    "day": "Sabtu",
-    "server": "Kewer SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-17",
-    "day": "Minggu",
-    "server": "Karura SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
-    "date": "2026-05-18",
-    "day": "Senin",
-    "server": "Omset Legend",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
     "date": "2026-05-19",
     "day": "Selasa",
     "server": "Totem SMP",
@@ -164,6 +17,13 @@
     "date": "2026-05-22",
     "day": "Jumat",
     "server": "Valoria SMP",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-05-23",
+    "day": "Sabtu",
+    "server": "Bone SMP",
     "platform": "TikTok",
     "time": "15:00"
   }
