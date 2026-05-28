@@ -54,6 +54,27 @@
     "server": "Potato SMP",
     "platform": "TikTok",
     "time": "15:00"
+  },
+  {
+    "date": "2026-05-29",
+    "day": "Jumat",
+    "server": "Aerocloud",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-05-30",
+    "day": "Sabtu",
+    "server": "Calmionix SMP",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-05-31",
+    "day": "Minggu",
+    "server": "Shadowyn",
+    "platform": "TikTok",
+    "time": "15:00"
   }
 ]
 
