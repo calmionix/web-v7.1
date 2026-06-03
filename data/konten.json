@@ -96,6 +96,20 @@
     "server": "PlayNetwork SMP",
     "platform": "TikTok",
     "time": "15:00"
+  },
+  {
+    "date": "2026-06-04",
+    "day": "kamis",
+    "server": "PlayNetwork SMP",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-06-05",
+    "day": "Jumat",
+    "server": "Terangin SMP",
+    "platform": "TikTok",
+    "time": "15:00"
   }
 ]
 
