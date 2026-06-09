@@ -70,5 +70,11 @@
     "time": "17:00",
     "duration": 1,
     "server": "Tiranox"
+  },
+  {
+    "date": "2026-06-11",
+    "time": "16:00",
+    "duration": 2,
+    "server": "Rainbow Craft"
   }
 ]
