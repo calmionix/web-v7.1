@@ -82,5 +82,17 @@
     "time": "16:00",
     "duration": 2,
     "server": "Rainbow Craft"
+  },
+  {
+    "date": "2026-06-19",
+    "time": "17:00",
+    "duration": 1,
+    "server": "Cookies Network"
+  },
+  {
+    "date": "2026-06-20",
+    "time": "14:00",
+    "duration": 1,
+    "server": "Farid SMP"
   }
 ]
