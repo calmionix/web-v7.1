@@ -145,12 +145,6 @@
   },
   {
     "date": "2026-07-07",
-    "server": "Kewer SMP",
-    "platform": "TikTok",
-    "time": "10:00"
-  },
-  {
-    "date": "2026-07-07",
     "server": "Voltraz MC",
     "platform": "TikTok",
     "time": "15:00"
@@ -196,6 +190,12 @@
     "server": "Hypix SMP",
     "platform": "TikTok",
     "time": "15:00"
-  }
+  },
+  {
+    "date": "2026-07-15",
+    "server": "Kewer SMP",
+    "platform": "TikTok",
+    "time": "10:00"
+  },
 ]
 
