@@ -168,10 +168,10 @@
     "time": "15:00"
   },
   {
-    "date": "2026-07-11",
+    "date": "2026-07-12",
     "server": "Potato SMP",
     "platform": "TikTok",
-    "time": "15:00"
+    "time": "10:00"
   },
   {
     "date": "2026-07-12",
@@ -195,7 +195,13 @@
     "date": "2026-07-15",
     "server": "Kewer SMP",
     "platform": "TikTok",
-    "time": "10:00"
+    "time": "15:00"
+  },
+  {
+    "date": "2026-07-16",
+    "server": "Terangin SMP",
+    "platform": "TikTok",
+    "time": "15:00"
   }
 ]
 
