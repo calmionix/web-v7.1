@@ -240,12 +240,6 @@
     "time": "15:00"
   },
   {
-    "date": "2026-07-23",
-    "server": "Utopia SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
     "date": "2026-07-24",
     "server": "PlayNetwork SMP",
     "platform": "TikTok",
@@ -266,6 +260,12 @@
   {
     "date": "2026-07-27",
     "server": "Heaven RPG",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-07-28",
+    "server": "Utopia SMP",
     "platform": "TikTok",
     "time": "15:00"
   }
