@@ -240,12 +240,6 @@
     "time": "15:00"
   },
   {
-    "date": "2026-07-24",
-    "server": "PlayNetwork SMP",
-    "platform": "TikTok",
-    "time": "15:00"
-  },
-  {
     "date": "2026-07-25",
     "server": "Mafr SMP",
     "platform": "TikTok",
@@ -272,6 +266,12 @@
   {
     "date": "2026-07-29",
     "server": "Quan SMP",
+    "platform": "TikTok",
+    "time": "15:00"
+  },
+  {
+    "date": "2026-07-30",
+    "server": "PlayNetwork SMP",
     "platform": "TikTok",
     "time": "15:00"
   }
