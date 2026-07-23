@@ -154,5 +154,11 @@
     "time": "16:30",
     "duration": 1,
     "server": "Marlin MC"
+  },
+  {
+    "date": "2026-07-24",
+    "time": "16:30",
+    "duration": 2,
+    "server": "Tiranox"
   }
 ]
